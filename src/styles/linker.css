@@ -8,21 +8,13 @@
 }
 .linkstyle {
     font-family: 'Inconsolata-Regular';
-<<<<<<< HEAD
     font-size: calc(3px + 2.5vmin);
-=======
-    font-size: calc(3px + 2vmin);
->>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
     display: inline-flex;
     flex-flow: row wrap;
     margin-inline-start: 4%;
     margin-inline-end: 4%;
 
-<<<<<<< HEAD
     color: #f1f1f1;
-=======
-    color: white;
->>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
     text-decoration: none;
     cursor: pointer;
 }

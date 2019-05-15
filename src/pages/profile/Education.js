@@ -14,11 +14,7 @@ export default class Education extends Component {
             <h2 className="title">Education</h2>
             <div className="studies">
             {this.props.studies.map((study)=>{
-<<<<<<< HEAD
                 return (<div className="study" key={study.id} >
-=======
-                return (<div className="study">
->>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
                     <img className="studyImg" src={require("../../images/education/"+study.iconUrl)} alt="doge" />
                 <p className="studyabout">{study.name}<br/>{study.type} - {study.major}</p>
                 </div>)

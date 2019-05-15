@@ -73,7 +73,6 @@
 		"type": "Postgraduate Diploma",
 		"major": "Game Development",
 		"percentage": 60,
-<<<<<<< HEAD
 		"iconUrl": "pg.png"
 	}],
 	"gallery": [{
@@ -92,8 +91,5 @@
 		"iconUrl": "",
 		"about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
 		"websiteUrl": "http://bit.ly/snoopyios"
-=======
-		"iconUrl":"pg.png"
->>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
 	}]
 }
