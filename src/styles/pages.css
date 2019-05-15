@@ -1,0 +1,19 @@
+@font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    font-family: Inconsolata-Regular;
+}
+@font-face{
+  src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
+    font-family: Inconsolata-Bold;
+}
+
+.title{
+    /* position: absolute; */
+    font-family: 'Inconsolata-Bold';
+    font-weight: bolder;
+    font-size: calc(5px + 5vmin);
+    align-items: left;
+    text-align: left;
+    color: #007acc
+    /* height: calc((5px + 5vmin)*2) ; */
+}

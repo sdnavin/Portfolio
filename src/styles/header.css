@@ -1,0 +1,57 @@
+@font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    font-family: Inconsolata-Regular;
+}
+@font-face{
+  src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
+    font-family: Inconsolata-Bold;
+}
+
+.portheader {
+    background-image: url('../images/header.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.background-tint {
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+}
+
+.portfolio-dp{
+    align-items: flex-start;
+    height: 8vmin;
+    border-radius: 50%;
+}
+
+.portname{
+    font-size: calc(10px + 2vmin);
+    align-items: flex-start;
+    margin-left: 1%; 
+    font-family: 'Inconsolata-Bold';
+}
+.portLinker{
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.titledescribe{ 
+    width: 100%;
+    font-family: 'Inconsolata-Regular';
+    font-size: calc(8px + 2vmin);
+    line-height: 1.6;
+}  
+
+
+

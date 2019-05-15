@@ -1,0 +1,42 @@
+@font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    font-family: Inconsolata-Regular;
+}
+@font-face{
+  src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
+    font-family: Inconsolata-Bold;
+}
+.linkstyle {
+    font-family: 'Inconsolata-Regular';
+    font-size: calc(3px + 2vmin);
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin-inline-start: 4%;
+    margin-inline-end: 4%;
+
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linkstyle.active{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #007acc
+}
+
+/* unvisited link */
+.linkstyle:link {
+    color: white;
+}
+
+/* mouse over link */
+.linkstyle:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+.links{
+    margin-bottom: 10px; 
+}

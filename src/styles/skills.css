@@ -1,0 +1,118 @@
+@font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    font-family: Inconsolata-Regular;
+}
+@font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
+    font-family: Inconsolata-Bold;
+}
+
+.skillholder{
+    position: relative;
+    left: 1%;
+    /* height: calc(10px + 50vmin); */
+}
+
+.skillbut{
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    height: calc(5px + 5vmin);
+    font-size: calc(5px + 5vmin);
+    font-weight: bold;
+    left: calc((5px + 5vmin)*6);
+    z-index:1;
+    pointer-events: auto;
+    top:calc((1px + 2vmin)*-1);
+    color: #f1f1f1;
+}
+.skillbut.disable{
+    color: #f1f1f159;
+}
+
+.skillbut.span{
+    left: calc((5px + 7vmin)*6);
+}
+
+.skillbut.span.disable{
+    color: #f1f1f159;
+}
+
+.skillabout{
+    left: 1%;
+    width: 50%;
+    /* position: absolute; */
+/* display: flex; */
+    position: relative;
+}
+
+.abouttitle{
+    /* display: flex; */
+    /* position: absolute; */
+    text-align: left;
+    /* top: calc((5px + 8vmin)*2); */
+    font-family: "Inconsolata-bold";
+    font-size: calc(2px + 2vmin);
+    width:90%;
+    color: #eff4ff;
+}
+
+.about {
+    /* display: flex; */
+    /* position: absolute; */
+    font-family: "Inconsolata-Regular";
+    font-size: calc(2px + 2vmin);
+    top: calc((10px + 8vmin)*3);
+    text-align: justify;
+    width:90%;
+    color: #eff4ff;
+}
+
+.skillset {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left:  50%;
+    width: 50%;
+    align-items: center;
+    top: calc((10px + 5vmin));
+}
+
+.skill {
+    width: calc(4px + 20vmin);
+    height: calc(4px + 20vmin);
+    margin:calc(1px + 2vmin);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.minorskill {
+    width: calc(4px + 15vmin);
+    height: calc(4px + 15vmin);
+    margin:calc(1px + 1vmin);
+}
+
+.skillImg{
+    position: absolute;
+    width: calc(4px + 10vmin);
+    top:calc((4px + 20vmin)/3);
+}
+
+.minorskillImg{
+    position: absolute;
+    width: calc(4px + 5vmin);
+    top:calc((4px + 15vmin)/3);
+}
+
+.skillName{
+    position:absolute;
+    font-family: "Inconsolata-Bold";
+    font-size: 2vmin;
+    right:0px;
+    top:0px;
+}
+
+.skillgraph{
+    display: flex;
+    position: relative;
+}
