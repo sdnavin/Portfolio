@@ -18,7 +18,10 @@
     align-items: center;
     justify-content: center;
     color: rgb(255, 255, 255);
+<<<<<<< HEAD
     /* color: #007acc; */
+=======
+>>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
 }
 .background-tint {
     background-color: rgba(0, 0, 0, 0.75);
