@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import PortHeader from './controllers/PortHeader';
+import profile from './pages/profile/profile';
+import contact from './pages/contact/contact';
+import gallery from './pages/gallery/gallery';
+import achieve from './pages/achievements/achieve';
+import resume from './pages/resume/resume';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+    <Router>
+      <div className="App">
+        <PortHeader/>
+        <div className="pages">
+          <Route exact path="/" component={profile}/>
+          <Route exact path="/gallery" component={gallery}/>
+          <Route exact path="/achievements" component={achieve}/>
+          <Route exact path="/resume" component={resume}/>
+          <Route path="/contact" component={contact} />
+        </div>
+      </div>
+    </Router>
+    
+    );
+  }
+  
+  export default App;
+  

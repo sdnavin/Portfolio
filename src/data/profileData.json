@@ -1,0 +1,74 @@
+{
+	"experience": [{
+		"id": 1,
+		"name": "Senior Developer",
+		"companyName": "ADabisc - Doha, Qatar",
+		"projectName": "Trimoo",
+		"about": "Family Entertainment Center, combination of multiple theme parks Angry birds world, Virtuocity and Juniverse. Virtuocity is a Gaming hub, Where in Racer section has f1 simulation which gets the game data from IRacing game and simulates accordingly. User experience the f1 racing with cock pit and racer roles. Juniverse is a Futuristic park where user have experience of role playing as a Dentist, Radio Jockey, TV anchor. Firefighter, Defense team, Perfumist, Artist, Banker, Doctor, Pharmacist and Police with latest Technologies like Zspace, HTC Vive, Oculus, Myo, Intel Realsense and Kinect.",
+		"skills": [{
+				"id": 1,
+				"value": 90,
+				"name": "Unity3d",
+				"iconUrl": "unity3d.png"
+			},
+			{
+				"id": 2,
+				"value": 90,
+				"name": "C#",
+				"iconUrl": "csharp.png"
+			},
+			{
+				"id": 3,
+				"value": 90,
+				"name": "Basecamp",
+				"iconUrl": "basecamp.png"
+			},
+			{
+				"id": 4,
+				"value": 40,
+				"name": "Basecamp",
+				"iconUrl": "basecamp.png"
+			},
+			{
+				"id": 5,
+				"value": 60,
+				"name": "Basecamp",
+				"iconUrl": "basecamp.png"
+			}
+		]
+	}, {
+		"id": 2,
+		"name": "Senior Developer",
+		"companyName": "ADabisc - Doha, Qatar",
+		"projectName": "Cando",
+		"about": "An indoor play area for tweens, which has physical and digital games. The user interactive to the games has been developed with user Wearable device and Game manager device, where wearable communicates with RFID and game manager handles each games charging system with RFID reader. User scans the Wearable device to the game manager device to start the game, user point system will be displayed in Wearable. Coin pulse mechanism has been digitized with wearable scan.",
+		"skills": [{
+				"id": 1,
+				"value": 90,
+				"name": "Unity3d",
+				"iconUrl": "unity3d.png"
+			},
+			{
+				"id": 2,
+				"value": 90,
+				"name": "C#",
+				"iconUrl": "csharp.png"
+			}
+		]
+	}],
+	"education": [{
+		"id": 1,
+		"name": "Kalasalingam University",
+		"type": "Undergraduate",
+		"major": "Information Technology",
+		"percentage": 70,
+		"iconUrl":"ug.png"
+	}, {
+		"id": 2,
+		"name": "Image college of arts and animation",
+		"type": "Postgraduate Diploma",
+		"major": "Game Development",
+		"percentage": 60,
+		"iconUrl":"pg.png"
+	}]
+}
