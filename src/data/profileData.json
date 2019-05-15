@@ -62,13 +62,30 @@
 		"type": "Undergraduate",
 		"major": "Information Technology",
 		"percentage": 70,
-		"iconUrl":"ug.png"
+		"iconUrl": "ug.png"
 	}, {
 		"id": 2,
 		"name": "Image college of arts and animation",
 		"type": "Postgraduate Diploma",
 		"major": "Game Development",
 		"percentage": 60,
-		"iconUrl":"pg.png"
+		"iconUrl": "pg.png"
+	}],
+	"gallery": [{
+		"id": 0,
+		"name": "Driving School Simulation",
+		"type": "Simulation",
+		"youtubeUrl": "wjsiq3EPoaw",
+		"iconUrl": "",
+		"about": "Developed a driving school setup in Hololens, Takes persistent position above the table and gives much more detailed information by tapping on it.",
+		"websiteUrl": "http://holoteq.com/holoteq/"
+	}, {
+		"id": 1,
+		"name": "Snoopy Whoopy",
+		"type": "Game",
+		"youtubeUrl": "q9tzHmMRBwk",
+		"iconUrl": "",
+		"about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
+		"websiteUrl": "http://bit.ly/snoopyios"
 	}]
 }
