@@ -66,8 +66,8 @@ export default class GalleryView extends Component {
     
     getGalleryItem(item){
         const opts = {
-            height: '40',
-            width: '60',
+            height: '228',//152
+            width: '384',//256
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 0
             }
@@ -78,7 +78,10 @@ export default class GalleryView extends Component {
             <div className="filterText">
             <h1><span>{item.name}</span></h1>
             <p>{item.about.slice(0,100)}{item.about.length>100?"...":""}</p>
-            <YouTube ideoId={item.youtubeUrl} opts={opts}/>
+            {
+            (item.youtubeUrl.length>0)?
+            <YouTube ideoId={item.youtubeUrl} opts={opts}/>:""
+            }
             <p className="hypertext" onClick={this.togglePopup.bind(this,item)}>More details</p>
             </div>
             </div>

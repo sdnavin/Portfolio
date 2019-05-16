@@ -7,15 +7,15 @@
     right: 0;  
     bottom: 0;  
     margin: auto;  
-    background-color: rgba(0,0,0, 0.8);  
+    background-color: rgba(0,0,0, 0.6);  
   }  
   .popupinner {  
       /* display: flex; */
     position: absolute;  
     left: 15%;  
     right: 15%;  
-    top: 15%;  
-    bottom: 15%;  
+    top: 10%;  
+    /* bottom: 15%;   */
     margin: auto;  
     border-radius: 20px;  
     background-color:#000000de; 

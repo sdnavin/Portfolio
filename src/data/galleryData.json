@@ -16,26 +16,74 @@
     "websiteUrl": "http://bit.ly/snoopyios"
 }, {
     "id": 2,
-    "name": "Snoopy Whoopy",
-    "type": "Simulation",
-    "youtubeUrl": "q9tzHmMRBwk",
+    "name": "Juniverse",
+    "type": "Game",
+    "youtubeUrl": "",
     "iconUrl": "",
-    "about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
-    "websiteUrl": "http://bit.ly/snoopyios"
+    "about": "Developing multiple Games / AR /  VR Experiences and implementing the structure for player checkIn/CheckOut for the Theme Park. Will be posting the detailed Information about Games once the park the opened.",
+    "websiteUrl": "http://www.dohafestivalcity.com/home/Play/juniverse"
 }, {
     "id": 3,
-    "name": "Snoopy Whoopy",
-    "type": "Game",
+    "name": "Virtuocity",
+    "type": "Application",
     "youtubeUrl": "q9tzHmMRBwk",
     "iconUrl": "",
-    "about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
-    "websiteUrl": "http://bit.ly/snoopyios"
+    "about": "Data transfer from Hardware connection to games, Handling the data transfer through the Network. Player Chat system, Implemented Multi Channel communication, Announcement Channel, Audio System Management with Unity3d & TeamSpeak.",
+    "websiteUrl": "https://virtuocity.qa/"
 }, {
     "id": 4,
-    "name": "Snoopy Whoopy",
-    "type": "Game",
-    "youtubeUrl": "q9tzHmMRBwk",
+    "name": "Cando",
+    "type": "Application",
+    "youtubeUrl": "",
     "iconUrl": "",
-    "about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
-    "websiteUrl": "http://bit.ly/snoopyios"
+    "about": "Developed the Player Wearable / Game management system.",
+     "websiteUrl": "http://www.dohafamily.com/Indoor-Play-areas/index.php/name/Cando/listing/33642/"
+}, {
+    "id": 5,
+    "name": "Fooya",
+    "type": "Game",
+    "youtubeUrl": "W8fqnhWQz98",
+    "iconUrl": "",
+    "about": "Food fight Multiplayer game.",
+     "websiteUrl": "https://www.fooya.com/"
+}, {
+    "id": 6,
+    "name": "Hayim Zaken",
+    "type": "Application",
+    "youtubeUrl": "bSvWlrESgFk",
+    "iconUrl": "",
+    "about": "AR Real estate App (IOS & Android)",
+     "websiteUrl": ""
+}, {
+    "id": 7,
+    "name": "Augray",
+    "type": "Application",
+    "youtubeUrl": "3UD3srFFgss",
+    "iconUrl": "",
+    "about": "AR application with greetings, avatars and film advertising",
+     "websiteUrl": "https://augray.com/"
+}, {
+    "id": 8,
+    "name": "Get your girlfriend",
+    "type": "Game",
+    "youtubeUrl": "FAyK0KJsD6o",
+    "iconUrl": "",
+    "about": "IOS & Android Game",
+     "websiteUrl": "https://www.gameanax.com/"
+}, {
+    "id": 9,
+    "name": "Asteroid Attacks",
+    "type": "Game",
+    "youtubeUrl": "XRK5ZJGFoEY",
+    "iconUrl": "",
+    "about": "IOS & Android Game",
+     "websiteUrl": "https://www.gameanax.com/"
+}, {
+    "id": 10,
+    "name": "Doodle Tank Battle",
+    "type": "Game",
+    "youtubeUrl": "9L4No20i1Ug",
+    "iconUrl": "",
+    "about": "IOS & Android Game",
+     "websiteUrl": "https://www.gameanax.com/"
 }]

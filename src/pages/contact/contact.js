@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import dp from '../../images/rich.jpg';
+import '../../styles/contact.css';
 
 export default function contact() {
   return (
     <div>
-      <h1>Contact</h1>
+      <img src={dp} className="portfolio-dp" alt="logo" />
+      <h1 className="titlecontact">  Richard Navin </h1>
     </div>
   )
 }

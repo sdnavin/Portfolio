@@ -25,12 +25,6 @@
     background-blend-mode: multiply;
 }
 
-.portfolio-dp{
-    align-items: flex-start;
-    height: 8vmin;
-    border-radius: 50%;
-}
-
 .portname{
     font-size: calc(10px + 2vmin);
     align-items: flex-start;

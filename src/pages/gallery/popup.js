@@ -10,7 +10,7 @@ class Popup extends React.Component {
       height: '360',
       width: '640',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-          autoplay: 0
+        autoplay: 0
       }
     };
     return (  
@@ -20,7 +20,10 @@ class Popup extends React.Component {
       <h1><span>{item.name}</span></h1>
       <p>{item.about}</p>
       <br/>
-      <YouTube ideoId={item.youtubeUrl} opts={opts}/>
+      {
+        (item.youtubeUrl.length>0)?
+        <YouTube ideoId={item.youtubeUrl} opts={opts}/>:""
+      }
       
       <p className="close" onClick={this.props.closePopup}>Close</p>  
       </div>

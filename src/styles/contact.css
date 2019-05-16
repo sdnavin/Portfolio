@@ -1,0 +1,19 @@
+@import './font.css';
+
+.titlecontact{
+    /* position: absolute; */
+    font-family: 'Inconsolata-Bold';
+    font-weight: bolder;
+    font-size: calc(5px + 5vmin);
+    color: #007acc;
+    align-items: center;
+    /* height: calc((5px + 5vmin)*2) ; */
+}
+
+.portfolio-dp{
+    position: relative;
+    padding-top: 30px;
+    align-items: flex-start;
+    height: 60vmin;
+    border-radius: 50%;
+}
