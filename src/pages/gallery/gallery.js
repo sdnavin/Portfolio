@@ -1,23 +1,37 @@
 import React, { Component } from 'react'
-import YouTube from 'react-youtube';
+import galleryData from '../../data/galleryData.json';
+import '../../styles/gallery.css'
+import GalleryView from './GalleryView'
 
 export default class gallery extends Component {
-  render() {
-    const opts = {
-      height: '390',
-      width: '640',
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 0
-      }
+  
+  canRender=false;
+
+  constructor(){
+    super();
+    this.state = {
+      galleryState:[]
     };
-
-    return (
-      <div className="gallery">
-      <h1>Gallery</h1>
-      <hr border="0" width="80%" />
-          <YouTube ideoId="wjsiq3EPoaw" opts={opts} />
-      </div>
-    )
   }
-}
 
+  
+  componentDidMount(){
+    this.setState({galleryState:galleryData});
+    this.canRender=true;
+  }
+  
+  render() {
+    
+    if(this.canRender){
+      return (
+        <div className="gallery">
+        <GalleryView galleryItems={this.state.galleryState}/>
+        </div>
+        )
+      }else{
+        return (<div></div>)
+      }
+    }
+  }
+  
+  

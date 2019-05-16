@@ -14,7 +14,6 @@ export default class profile extends Component {
   
   componentDidMount(){
     this.setState({profile:profiledata});
-    console.log("mount");
     this.canRender=true;
   }
   
@@ -27,10 +26,7 @@ export default class profile extends Component {
         </div>
         )
       }else{
-        return (
-          <div>
-          </div>
-          )
+        return (<div></div>)
         }
       }
     }

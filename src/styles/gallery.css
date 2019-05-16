@@ -1,0 +1,89 @@
+@import './font.css';
+/* @font-face{
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    font-family: Inconsolata-Regular;
+}
+@font-face{
+  src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
+    font-family: Inconsolata-Bold;
+} */
+.filterpage{
+    width: 90%;
+    display: inline-block;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.filterstyle {
+    font-family: 'Inconsolata-Regular';
+    font-size: calc(3px + 2vmin);
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: calc(2px + 3vmin);
+}
+
+.filterstyle.active{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #007acc
+}
+
+/* mouse over link */
+.filterstyle:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.filterboxitem{
+    border-radius: 20px;  
+    background-color:#2a2a2ade; 
+}
+
+.filterbox{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* flex-flow: row; */
+    justify-content: center;
+}
+.filteritem{
+    width: calc(100px + 50vmin);
+    /* line-height: 500px; */
+    padding: 20px;
+}
+.hypertext{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    color: #007acc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.filterText{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    font-family: 'Inconsolata-Regular';
+    color: #f1f1f1;
+}
+.filterText span{
+    font-family: 'Inconsolata-Bold';
+    font-weight: bold;
+    color: #007acc;
+}
+

@@ -1,11 +1,4 @@
-@font-face{
-    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
-    font-family: Inconsolata-Regular;
-}
-@font-face{
-  src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
-    font-family: Inconsolata-Bold;
-}
+
 .linkstyle {
     font-family: 'Inconsolata-Regular';
     font-size: calc(3px + 2.5vmin);
@@ -27,11 +20,7 @@
 
 /* unvisited link */
 .linkstyle:link {
-<<<<<<< HEAD
     color: #f1f1f1;
-=======
-    color: white;
->>>>>>> 73f7475cd4c948be8ac718f6745ec5d78bfba046
 }
 
 /* mouse over link */

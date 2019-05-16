@@ -7,13 +7,16 @@ import contact from './pages/contact/contact';
 import gallery from './pages/gallery/gallery';
 import achieve from './pages/achievements/achieve';
 import resume from './pages/resume/resume';
-
+import {Helmet} from 'react-helmet';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Helmet >
+                <style>{'body { background-color: #000000de; }'}</style>
+        </Helmet>
         <PortHeader/>
         <div className="pages">
           <Route exact path="/" component={profile}/>

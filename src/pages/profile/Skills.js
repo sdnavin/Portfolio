@@ -24,14 +24,14 @@ export default class Skills extends Component {
   };
 
   checkButtonActivate=(valIn)=>{
-    if((valIn==-1)?(this.experienceNo!=0):(this.experienceNo!=(this.props.experiences.length-1)))
+    if((valIn===-1)?(this.experienceNo!==0):(this.experienceNo!==(this.props.experiences.length-1)))
       return this.changeExp(valIn);
     else
       return null;
   };
 
   checkButtonCSS=(valIn)=>{
-    if((valIn==-1)?(this.experienceNo!=0):(this.experienceNo!=(this.props.experiences.length-1)))
+    if((valIn===-1)?(this.experienceNo!==0):(this.experienceNo!==(this.props.experiences.length-1)))
       return "";
     else
       return " disable";
