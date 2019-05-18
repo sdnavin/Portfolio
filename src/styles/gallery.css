@@ -44,6 +44,12 @@
 .filterboxitem{
     border-radius: 20px;  
     background-color:#2a2a2ade; 
+    box-shadow: 1px 1px 2px 0  #007acc;
+    order: inherit;
+    box-sizing: border-box;
+    height: auto;
+    align-self: stretch;
+    align-content: stretch;
 }
 
 .filterbox{
@@ -55,13 +61,13 @@
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* flex-flow: row; */
     justify-content: center;
 }
 .filteritem{
     width: calc(100px + 50vmin);
-    /* line-height: 500px; */
     padding: 20px;
+    height: auto;
+    flex-shrink: inherit;
 }
 .hypertext{
     padding-top: 10px;
