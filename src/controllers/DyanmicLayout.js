@@ -15,18 +15,18 @@ export default class DyanmicLayout extends Component {
     this.forceUpdate();
   }
   componentDidUpdate(){
-    console.log(this.totalIn+" "+this.props.children[0].length);
-    this.start();
-    if(this.totalIn!==this.props.children[0].length)
+    console.log(this.totalIn+" "+this.props.children.length);
+    if(this.totalIn!==this.props.children.length)
     {
-      this.totalIn=this.props.children[0].length;
-       this.forceUpdate();
+      this.start();
+      this.totalIn=this.props.children.length;
+      this.forceUpdate();
     }
   }
 
  
   start(){
-    this.arrayOfDiv=this.props.children[0];
+    this.arrayOfDiv=this.props.children;
     this.canRender=true;
   }
   

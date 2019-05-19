@@ -14,7 +14,8 @@ export default class GalleryView extends Component {
         super(props);  
         this.state = { 
             itemData: null,
-            showPopup: false };  
+            showPopup: false
+         };  
     }  
     
     getGalleryTypes(){
@@ -90,6 +91,7 @@ export default class GalleryView extends Component {
             )
         }
         togglePopup(popitem) {  
+            
             this.setState({  
                 itemData: popitem,
                 showPopup: !this.state.showPopup  
@@ -104,10 +106,12 @@ export default class GalleryView extends Component {
                 </div>
                 <hr border="0" />
 
-                <DyanmicLayout noofcolumns={3}>
+                <DyanmicLayout noofcolumns={2}>
                 {this.filterView()}
-                {this.state.showPopup ?  <Popup popitem={this.state.itemData} closePopup={this.togglePopup.bind(this,null)}  />  : null}
+                {/* <div></div> */}
                 </DyanmicLayout>  
+
+                {this.state.showPopup ?  <Popup popitem={this.state.itemData} closePopup={this.togglePopup.bind(this,null)}  />  : null}
 
                 </div>
                 )
