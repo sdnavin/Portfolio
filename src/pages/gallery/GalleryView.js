@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import '../../styles/gallery.css'
 import Popup from './popup'
+import DyanmicLayout from '../../controllers/DyanmicLayout'
 
 export default class GalleryView extends Component {
     
@@ -58,7 +59,7 @@ export default class GalleryView extends Component {
         {galleries.map((galleryItem)=>{
             if(noFilter||galleryItem.type===this.currentFilterType){
                 //show filtered content
-                filterItems.push(<div className="filteritem" key={galleryItem.id} >{this.getGalleryItem(galleryItem)}</div>)
+                filterItems.push(<div className="filteritem" key={galleryItem.id}>{this.getGalleryItem(galleryItem)}</div>)
             }
         })}
         return filterItems;
@@ -102,17 +103,15 @@ export default class GalleryView extends Component {
                 {this.getGallery()}
                 </div>
                 <hr border="0" />
-                <div className="filterbox" >
+
+                <DyanmicLayout noofcolumns={3}>
                 {this.filterView()}
-                {
-                    this.state.showPopup ?  
-                    <Popup popitem={this.state.itemData} closePopup={this.togglePopup.bind(this,null)}  />  : null  
-                }  
-                </div>
+                {this.state.showPopup ?  <Popup popitem={this.state.itemData} closePopup={this.togglePopup.bind(this,null)}  />  : null}
+                </DyanmicLayout>  
+
                 </div>
                 )
             }
-            
         }
         // PropTypes
         GalleryView.propTypes = {

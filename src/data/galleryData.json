@@ -5,6 +5,8 @@
     "youtubeUrl": "wjsiq3EPoaw",
     "iconUrl": "",
     "about": "Developed a driving school setup in Hololens, Takes persistent position above the table and gives much more detailed information by tapping on it.",
+    "platforms":"Hololens",
+
     "websiteUrl": "http://holoteq.com/holoteq/"
 }, {
     "id": 1,
@@ -13,6 +15,8 @@
     "youtubeUrl": "q9tzHmMRBwk",
     "iconUrl": "",
     "about": "Physics Based Game - Join the adventures of your cute little friend Snoopy who is deliberately waiting to be a part of your life. His super cuteness and innocence will take your heart. We are sure that you will love him and he will love you back in his adventurous ways.",
+    "platforms":"Android,IOS",
+
     "websiteUrl": "http://bit.ly/snoopyios"
 }, {
     "id": 2,
@@ -21,6 +25,7 @@
     "youtubeUrl": "",
     "iconUrl": "",
     "about": "Developing multiple Games / AR /  VR Experiences and implementing the structure for player checkIn/CheckOut for the Theme Park. Will be posting the detailed Information about Games once the park the opened.",
+    "platforms":"Android,IOS,Zspace,PC,Oculus Go,HTC Vice",
     "websiteUrl": "http://www.dohafestivalcity.com/home/Play/juniverse"
 }, {
     "id": 3,
@@ -29,6 +34,7 @@
     "youtubeUrl": "q9tzHmMRBwk",
     "iconUrl": "",
     "about": "Data transfer from Hardware connection to games, Handling the data transfer through the Network. Player Chat system, Implemented Multi Channel communication, Announcement Channel, Audio System Management with Unity3d & TeamSpeak.",
+    "platforms":"PC",
     "websiteUrl": "https://virtuocity.qa/"
 }, {
     "id": 4,
@@ -37,6 +43,7 @@
     "youtubeUrl": "",
     "iconUrl": "",
     "about": "Developed the Player Wearable / Game management system.",
+    "platforms":"Android,IOS,Arduino",
      "websiteUrl": "http://www.dohafamily.com/Indoor-Play-areas/index.php/name/Cando/listing/33642/"
 }, {
     "id": 5,
@@ -45,6 +52,7 @@
     "youtubeUrl": "W8fqnhWQz98",
     "iconUrl": "",
     "about": "Food fight Multiplayer game.",
+    "platforms":"Facebook,Website",
      "websiteUrl": "https://www.fooya.com/"
 }, {
     "id": 6,
@@ -53,6 +61,7 @@
     "youtubeUrl": "bSvWlrESgFk",
     "iconUrl": "",
     "about": "AR Real estate App (IOS & Android)",
+    "platforms":"Android,IOS",
      "websiteUrl": ""
 }, {
     "id": 7,
@@ -61,6 +70,7 @@
     "youtubeUrl": "3UD3srFFgss",
     "iconUrl": "",
     "about": "AR application with greetings, avatars and film advertising",
+    "platforms":"Android,IOS",
      "websiteUrl": "https://augray.com/"
 }, {
     "id": 8,
@@ -69,6 +79,7 @@
     "youtubeUrl": "FAyK0KJsD6o",
     "iconUrl": "",
     "about": "IOS & Android Game",
+    "platforms":"Android,IOS",
      "websiteUrl": "https://www.gameanax.com/"
 }, {
     "id": 9,
@@ -77,6 +88,7 @@
     "youtubeUrl": "XRK5ZJGFoEY",
     "iconUrl": "",
     "about": "IOS & Android Game",
+    "platforms":"Android,IOS",
      "websiteUrl": "https://www.gameanax.com/"
 }, {
     "id": 10,
@@ -85,5 +97,6 @@
     "youtubeUrl": "9L4No20i1Ug",
     "iconUrl": "",
     "about": "IOS & Android Game",
+    "platforms":"Android,IOS",
      "websiteUrl": "https://www.gameanax.com/"
 }]
