@@ -7,6 +7,8 @@
     font-family: Inconsolata-Bold;
 }
 
+
+
 .portheader {
     background-image: url('../images/header.jpg');
     background-position: top;
@@ -25,6 +27,11 @@
     background-blend-mode: multiply;
 }
 
+.sticky{
+    margin-top: -100px;
+    z-index: 1;
+}
+
 .portname{
     font-size: calc(10px + 2vmin);
     align-items: flex-start;
@@ -39,6 +46,12 @@
     position: fixed;
     top: 0;
     width: 100%;
+}
+.pages{
+    position: relative;
+}
+.offset{
+    top: 200px;
 }
 
 .titledescribe{ 

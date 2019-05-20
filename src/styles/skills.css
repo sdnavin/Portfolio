@@ -79,9 +79,9 @@
 }
 
 .skill {
-    width: calc(4px + 20vmin);
-    height: calc(4px + 20vmin);
-    margin:calc(1px + 2vmin);
+    width: calc(4px + 15vmin);
+    height: calc(4px + 15vmin);
+    margin:calc(1px + 1vmin);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -94,8 +94,8 @@
 
 .skillImg{
     position: absolute;
-    width: calc(4px + 10vmin);
-    top:calc((4px + 20vmin)/3);
+    width: calc(4px + 7vmin);
+    top:calc((4px + 14vmin)/3);
 }
 
 .minorskillImg{

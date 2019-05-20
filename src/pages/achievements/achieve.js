@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { Component } from 'react'
+import achievedata from '../../data/achieveData.json'
+import Achievements from './Achievements.js';
 
-export default function achieve() {
-  return (
-    <div>
-      <h1>Achieve</h1>
-    </div>
-  )
+export default class achieve extends Component {
+  canRender=false;
+  
+  state = {
+    achievements:[]
+  }
+  
+  componentDidMount(){
+    this.setState({achievements:achievedata});
+    this.canRender=true;
+  }
+
+  render() {
+    if(this.canRender){
+      return (
+        <div >
+        <Achievements allAchievements={this.state.achievements} />
+        </div>
+        )
+      }else{
+        return (<div></div>)
+      }
+  }
 }

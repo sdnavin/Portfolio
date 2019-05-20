@@ -1,12 +1,5 @@
 @import './font.css';
-/* @font-face{
-    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
-    font-family: Inconsolata-Regular;
-}
-@font-face{
-    src: url(../fonts/Inconsolata/Inconsolata-Bold.ttf);
-    font-family: Inconsolata-Bold;
-} */
+
 .filterpage{
     width: 90%;
     display: inline-block;

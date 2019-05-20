@@ -68,8 +68,8 @@ export default class GalleryView extends Component {
     
     getGalleryItem(item){
         const opts = {
-            height: '228',//152
-            width: '384',//256
+            height: 228*((window.innerWidth>=1000)?1:0.6),//152
+            width: 384*((window.innerWidth>=1000)?1:0.6),//256
             playerVars: { // https://developers.google.com/youtube/player_parameters
                 autoplay: 0
             }
@@ -106,7 +106,7 @@ export default class GalleryView extends Component {
                 </div>
                 <hr border="0" />
 
-                <DyanmicLayout noofcolumns={2}>
+                <DyanmicLayout noofcolumns={(window.innerWidth>=1000)?2:1}>
                 {this.filterView()}
                 {/* <div></div> */}
                 </DyanmicLayout>  

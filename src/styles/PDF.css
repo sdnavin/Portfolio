@@ -1,0 +1,39 @@
+@import './font.css';
+
+.pager{
+    display: flex;
+    font-size: calc(50px + 5vmin);
+    font-family:  'Inconsolata-Bold';
+    position: fixed;
+    height:calc(50px + 5vmin) ;
+    top: 40%;
+    width: 100%;
+    
+}
+.previous{
+    color: #007acc;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 5%;
+
+}
+.previous.disabled{
+    color:  #007acc46;
+    font-weight: 200;
+    padding-left: 5%;
+}
+.next{
+    color: #007acc;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 80%;
+}
+.next.disabled{
+    color:  #007acc46;
+    font-weight: 200;
+    padding-left: 80%;
+}
+.pdfView{
+    height: 200px;
+    width: 100px;
+}

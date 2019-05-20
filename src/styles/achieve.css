@@ -1,0 +1,15 @@
+@import './font.css';
+
+.Achieve{
+    width: 100%;
+    font-family:'Inconsolata-Regular';
+    color:#f1f1f1;
+}
+.Achieve span{
+    font-family:'Inconsolata-Bold';
+    color: #007acc;
+    cursor: pointer;
+}
+.studyImg{
+    display: flex;
+}

@@ -1,0 +1,19 @@
+[{
+    "id": 0,
+    "name": "Dare to be digital",
+    "type": "Competition",
+    "youtubeUrl": "",
+    "imageURL": "dare.jpg",
+    "about": "Participated in a Prestigious gaming competition Dare to be digital.",
+    "platforms":"IOS & Android",
+    "websiteUrl": "https://en.wikipedia.org/wiki/Dare_to_Be_Digital#Dare_2012"
+},{
+    "id": 1,
+    "name": "SQUARE ENIX India",
+    "type": "Competition",
+    "youtubeUrl": "",
+    "imageURL": "square.jpg",
+    "about": "Got Excellence award from the gaming competition by SQUARE ENIX",
+    "platforms":"IOS & Android",
+    "websiteUrl": ""
+}]

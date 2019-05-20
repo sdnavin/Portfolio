@@ -7,8 +7,9 @@ class Popup extends React.Component {
   render() {  
     const item= this.props.popitem;
     const opts = {
-      height: '360',
-      width: '640',
+
+      height: 360*((window.innerWidth>=1000)?1:0.4),//152
+      width: 640*((window.innerWidth>=1000)?1:0.4),//256
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0
       }

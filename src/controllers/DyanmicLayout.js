@@ -9,13 +9,11 @@ export default class DyanmicLayout extends Component {
   totalIn=0;
 
   componentDidMount(){
-    console.log(this.props.children);
     this.totalIn=this.props.children.length;
     this.start();
     this.forceUpdate();
   }
   componentDidUpdate(){
-    console.log(this.totalIn+" "+this.props.children.length);
     if(this.totalIn!==this.props.children.length)
     {
       this.start();
@@ -41,17 +39,18 @@ export default class DyanmicLayout extends Component {
   
   getEachColumn=(icolumn)=>{
     var loop=false;
-    var totalCount=this.props.noofcolumns;
+    var totalCount=this.props.noofcolumns-1;
     let j=0;
     const allLines=[];
 
     for(j=0;j<this.arrayOfDiv.length;j++){
-      if(j===icolumn||loop){
+      if(this.props.noofcolumns==1||j===icolumn||loop){
         loop=false;
         totalCount=this.props.noofcolumns-1;
         allLines.push(<div className="dyanmicColunmsItem" key={j} >{this.arrayOfDiv[j]}</div>);
       }else{
         totalCount--;
+        totalCount=Math.max(0,totalCount);
         if(totalCount===0){
           loop=true;
         }
