@@ -8,7 +8,7 @@
 		"skills": [{
 				"id": 1,
 				"value": 90,
-				"name": "Unity3d",
+				"name": "Unity3D",
 				"iconUrl": "unity3d.png"
 			},
 			{
@@ -25,15 +25,21 @@
 			},
 			{
 				"id": 4,
-				"value": 40,
-				"name": "Basecamp",
-				"iconUrl": "basecamp.png"
+				"value": 50,
+				"name": "Reactjs",
+				"iconUrl": "reactjs.png"
 			},
 			{
 				"id": 5,
 				"value": 60,
-				"name": "Basecamp",
-				"iconUrl": "basecamp.png"
+				"name": "Xcode",
+				"iconUrl": "xcode.png"
+			},
+			{
+				"id": 6,
+				"value": 60,
+				"name": "Android Studio",
+				"iconUrl": "androids.png"
 			}
 		]
 	}, {
@@ -53,6 +59,117 @@
 				"value": 90,
 				"name": "C#",
 				"iconUrl": "csharp.png"
+			},
+			{
+				"id": 3,
+				"value": 80,
+				"name": "Arduino",
+				"iconUrl": "arduino.png"
+			},
+			{
+				"id": 4,
+				"value": 60,
+				"name": "Xcode",
+				"iconUrl": "xcode.png"
+			},
+			{
+				"id": 5,
+				"value": 60,
+				"name": "Android Studio",
+				"iconUrl": "androids.png"
+			}
+		]
+	},{
+		"id": 3,
+		"name": "Developer",
+		"companyName": "ADabisc - Doha, Qatar",
+		"projectName": "Brazilia",
+		"about": "A Qatari Cultured Card Game for local market on iOS/Android. It has Multiplayer and Singleplayer mode which will be played with AI. Developed the AI with three levels, Used photon networking for the multiplayer environment and chat system. Local lobby has been developed with own Webservices to show live player state in the lobby.",
+		"skills": [{
+				"id": 1,
+				"value": 90,
+				"name": "Unity3d",
+				"iconUrl": "unity3d.png"
+			},
+			{
+				"id": 2,
+				"value": 90,
+				"name": "C#",
+				"iconUrl": "csharp.png"
+			},
+			{
+				"id": 3,
+				"value": 60,
+				"name": "Xcode",
+				"iconUrl": "xcode.png"
+			},
+			{
+				"id": 4,
+				"value": 60,
+				"name": "Android Studio",
+				"iconUrl": "androids.png"
+			}
+		]
+	},{
+		"id": 4,
+		"name": "Developer",
+		"companyName": "Wisdom Infotech - Chennai, India",
+		"projectName": "Augray",
+		"about": "AR Application to send and receive greetings to users with 3d contents and sounds. Digital Poster for movies, Digital Interactive Advertisement, AR Games and other marketing ideas. In iOS and Android Platform.",
+		"skills": [{
+				"id": 1,
+				"value": 90,
+				"name": "Unity3d",
+				"iconUrl": "unity3d.png"
+			},
+			{
+				"id": 2,
+				"value": 90,
+				"name": "C#",
+				"iconUrl": "csharp.png"
+			},
+			{
+				"id": 3,
+				"value": 60,
+				"name": "Xcode",
+				"iconUrl": "xcode.png"
+			},
+			{
+				"id": 4,
+				"value": 60,
+				"name": "Android Studio",
+				"iconUrl": "androids.png"
+			}
+		]
+	},{
+		"id": 5,
+		"name": "Developer",
+		"companyName": "GameAnax - Ahemdabad, India",
+		"projectName": "Multiple Projects",
+		"about": "Gaming Section of IndiaNIC, Design and develop games for mobile platforms. Involved in the development of few projects and updates of the existing games, Own the projects for Major titles like, Doodle Tank Battle, Tank Game with doodle art style has 20 levels in 4 worlds, each level with different AI enemies and attacking strategies. OUYA, iOS and Android platform. Snoppy Whoppy, 2D physics Game, Character with a balloon avoid obstacles to escape live from cave. 20 levels in 2 worlds, iOS and Android platform.",
+		"skills": [{
+				"id": 1,
+				"value": 90,
+				"name": "Unity3d",
+				"iconUrl": "unity3d.png"
+			},
+			{
+				"id": 2,
+				"value": 90,
+				"name": "C#",
+				"iconUrl": "csharp.png"
+			},
+			{
+				"id": 3,
+				"value": 60,
+				"name": "Xcode",
+				"iconUrl": "xcode.png"
+			},
+			{
+				"id": 4,
+				"value": 60,
+				"name": "Android Studio",
+				"iconUrl": "androids.png"
 			}
 		]
 	}],

@@ -4,8 +4,8 @@
     left: 1%;
 }
 .studies{
-    left: 1%;
-    width: 100%;
+    padding-left: 2%;
+    width: 80%;
     /* position: absolute; */
 }
 .study{
@@ -25,5 +25,5 @@
 .studyImg{
     display: flex;
     left : 1px;
-    width:5%;
+    width:calc(10px + 10vmin);
 }

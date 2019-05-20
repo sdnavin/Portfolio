@@ -11,7 +11,7 @@ export default class PortHeader extends Component {
   constructor(props){
     super(props);
     // Run the checkHeader function every time you scroll
-    window.addEventListener('scroll', this.handleScroll); 
+    // window.addEventListener('scroll', this.handleScroll); 
   }
   
   render() {
@@ -29,7 +29,7 @@ export default class PortHeader extends Component {
     handleScroll=()=> {
       let scrollPosition = Math.round(window.scrollY);
       // If we've scrolled 100px, add "sticky" class to the header
-      if (scrollPosition > 100){
+      if (scrollPosition > 50){
         let header= document.getElementsByClassName(this.defaultheader);
         if(header.length>0)
           header[0].className=(this.defaultheader+' sticky');

@@ -5,6 +5,7 @@ import '../styles/PDF.css';
 
 const PDFViewer = () => {
   const [page, setPage] = useState(1);
+  const [scale, setScale] = useState(0.8);
   const [pages, setPages] = useState(null);
 
  
@@ -23,12 +24,10 @@ const PDFViewer = () => {
     }
 
     return (
-      // <nav>
         <div className="pager">
           {previousButton}
           {nextButton}
         </div>
-      // </nav>
     );
 
   }
@@ -39,6 +38,7 @@ const PDFViewer = () => {
   const [loading, numPages] = usePdf({
     file: 'Data/CV_Richard.pdf',
     page,
+    scale,
     canvasEl,
   });
  
