@@ -6,7 +6,9 @@ import '../styles/PDF.css';
 const PDFViewer = () => {
   const [page, setPage] = useState(1);
   const [pages, setPages] = useState(null);
+
  
+
   const renderPagination = (page, pages) => {
     if (!pages) {
       return null;
@@ -19,6 +21,7 @@ const PDFViewer = () => {
     if (page === pages) {
       nextButton = <p className="next disabled">{ ">" }</p>;
     }
+
     return (
       // <nav>
         <div className="pager">
@@ -27,6 +30,7 @@ const PDFViewer = () => {
         </div>
       // </nav>
     );
+
   }
 
 

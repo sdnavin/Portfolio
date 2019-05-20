@@ -8,30 +8,33 @@
     height:calc(50px + 5vmin) ;
     top: 40%;
     width: 100%;
-    
 }
 .previous{
     color: #007acc;
     font-weight: bold;
     cursor: pointer;
-    padding-left: 5%;
+    position: absolute;
+    left: 2%;
 
 }
 .previous.disabled{
     color:  #007acc46;
     font-weight: 200;
-    padding-left: 5%;
+    position: absolute;
+    left: 2%;
 }
 .next{
+    position: absolute;
     color: #007acc;
     font-weight: bold;
     cursor: pointer;
-    padding-left: 80%;
+    right: 2%;
 }
 .next.disabled{
+    position: absolute;
     color:  #007acc46;
     font-weight: 200;
-    padding-left: 80%;
+    right: 2%;
 }
 .pdfView{
     height: 200px;
