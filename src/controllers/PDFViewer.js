@@ -49,7 +49,7 @@ const PDFViewer = () => {
   const canvasEl = useRef(null);
  
   const [loading, numPages] = usePdf({
-    file: 'Data/CV_Richard.pdf',
+    file: process.env.PUBLIC_URL+'Data/CV_Richard.pdf',
     page,
     scale,
     canvasEl,

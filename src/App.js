@@ -19,11 +19,11 @@ function App() {
         </Helmet>
         <PortHeader/>
         <div className="pages">
-          <Route exact path="/" component={profile}/>
-          <Route exact path="/gallery" component={gallery}/>
-          <Route exact path="/achievements" component={achieve}/>
-          <Route exact path="/resume" component={resume}/>
-          <Route exact path="/contact" component={contact} />
+          <Route exact path={process.env.PUBLIC_URL+"/"} component={profile}/>
+          <Route exact path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
+          <Route exact path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
+          <Route exact path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
+          <Route exact path={process.env.PUBLIC_URL+"/contact"} component={contact} />
         </div>
       </div>
     </Router>
