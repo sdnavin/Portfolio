@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/gallery" component={gallery}/>
           <Route exact path="/achievements" component={achieve}/>
           <Route exact path="/resume" component={resume}/>
-          <Route path="/contact" component={contact} />
+          <Route exact path="/contact" component={contact} />
         </div>
       </div>
     </Router>
