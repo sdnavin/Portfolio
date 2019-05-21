@@ -9,14 +9,41 @@ export default class GalleryView extends Component {
     
     currentFilterType="All";
     galleryTypes=["All",];
-    
     constructor(props){  
         super(props);  
         this.state = { 
             itemData: null,
             showPopup: false
-         };  
+        };  
     }  
+
+    opts = {
+        height : 228*((window.innerWidth>1000)?1:0.6),//152
+        width : 384*((window.innerWidth>1000)?1:0.6),//256
+        playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 0
+        }
+    };
+    
+    lastWindowSize=0;
+
+    componentDidMount() {
+        window.addEventListener('resize', this.HandleWindowResize);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.HandleWindowResize);
+    }
+
+    HandleWindowResize=()=>{
+        if((this.lastWindowSize==0&&window.innerWidth>1000)||(this.lastWindowSize==1000&&window.innerWidth<1000)){
+            this.lastWindowSize=(window.innerWidth>1000)?1000:0;
+            this.opts.height = 228*((window.innerWidth>1000)?1:0.6);//152
+            this.opts.width = 384*((window.innerWidth>1000)?1:0.6);//256
+            this.forceUpdate();
+        }
+    }
+    
     
     getGalleryTypes(){
         const galleries=this.props.galleryItems;
@@ -67,13 +94,7 @@ export default class GalleryView extends Component {
     }
     
     getGalleryItem(item){
-        const opts = {
-            height: 228*((window.innerWidth>=1000)?1:0.6),//152
-            width: 384*((window.innerWidth>=1000)?1:0.6),//256
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-                autoplay: 0
-            }
-        };
+
         return(
             <div>
             <div className="filterboxitem">
@@ -81,8 +102,8 @@ export default class GalleryView extends Component {
             <h1><span>{item.name}</span></h1>
             <p>{item.about.slice(0,100)}{item.about.length>100?"...":""}</p>
             {
-            (item.youtubeUrl.length>0)?
-            <YouTube ideoId={item.youtubeUrl} opts={opts}/>:""
+                (item.youtubeUrl.length>0)?
+                <YouTube ideoId={item.youtubeUrl} opts={this.opts}/>:""
             }
             <p className="hypertext" onClick={this.togglePopup.bind(this,item)}>More details</p>
             </div>
@@ -105,14 +126,14 @@ export default class GalleryView extends Component {
                 {this.getGallery()}
                 </div>
                 <hr border="0" />
-
-                <DyanmicLayout noofcolumns={(window.innerWidth>=1000)?2:1}>
+                
+                <DyanmicLayout noofcolumns={(window.innerWidth>1000)?2:1}>
                 {this.filterView()}
                 {/* <div></div> */}
                 </DyanmicLayout>  
-
+                
                 {this.state.showPopup ?  <Popup popitem={this.state.itemData} closePopup={this.togglePopup.bind(this,null)}  />  : null}
-
+                
                 </div>
                 )
             }

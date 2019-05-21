@@ -44,7 +44,7 @@ export default class DyanmicLayout extends Component {
     const allLines=[];
 
     for(j=0;j<this.arrayOfDiv.length;j++){
-      if(this.props.noofcolumns==1||j===icolumn||loop){
+      if(this.props.noofcolumns===1||j===icolumn||loop){
         loop=false;
         totalCount=this.props.noofcolumns-1;
         allLines.push(<div className="dyanmicColunmsItem" key={j} >{this.arrayOfDiv[j]}</div>);

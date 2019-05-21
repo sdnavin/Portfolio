@@ -13,30 +13,33 @@
     offset-anchor: 50%;
     left: 35%;
     align-items: flex-start;
-    height: calc(100px + 50vmin);
+    height: calc(100px + 30vmin);
     border-radius: 50%;
 }
 
 .contactMain{
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .contact{
-    width: 100%;
-    height: calc(100px + 50vmin);
-    position: absolute;
+    width: calc(100px + 30vmin);
+    display:inline-flex;
+    align-items: center;
+    justify-content:space-between;
+    /* position: absolute; */
 }
 
 .icons{
-    position: absolute;
+    /* position: absolute; */
     border-radius: 50%;
-    width: calc(50px + 15vmin);
-    height: calc(50px + 15vmin);
+    width: calc(10px + 5vmin);
+    height: calc(10px + 5vmin);
     cursor: pointer;
+    
 }
 
-.icons.fb{
+/* .icons.fb{
     left: 10%;
     top: 10%;
 
@@ -56,4 +59,4 @@
     bottom: 20%;
     width: calc(20px + 15vmin);
     height: calc(20px + 15vmin);
-}
+} */

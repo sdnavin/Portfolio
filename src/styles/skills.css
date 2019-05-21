@@ -15,15 +15,16 @@
 
 .skillbut{
     display: flex;
+    flex-flow: column;
     position: absolute;
     cursor: pointer;
     height: calc(5px + 5vmin);
     font-size: calc(5px + 5vmin);
     font-weight: bold;
-    left: calc((5px + 5vmin)*6);
+    left: calc((1px + 2vmin)*15);
     z-index:1;
     pointer-events: auto;
-    top:calc((1px + 2vmin)*-1);
+    top:calc((1px + 2vmin)*-2);
     color: #f1f1f1;
 }
 .skillbut.disable{
@@ -31,7 +32,7 @@
 }
 
 .skillbut.span{
-    left: calc((5px + 7vmin)*6);
+    left: calc((1px + 2vmin)*18);
 }
 
 .skillbut.span.disable{
@@ -75,16 +76,13 @@
     left:  50%;
     width: 50%;
     align-items: center;
-    top: calc((10px + 5vmin));
+    top: calc(2px + 1vmin);
 }
 
 .skill {
-    width: calc(4px + 15vmin);
-    height: calc(4px + 15vmin);
+    width: calc(21px + 10vmin);
+    height: calc(21px + 10vmin);
     margin:calc(1px + 1vmin);
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 .minorskill {
     width: calc(4px + 15vmin);
@@ -93,9 +91,10 @@
 }
 
 .skillImg{
-    position: absolute;
-    width: calc(4px + 7vmin);
-    top:calc((4px + 14vmin)/3);
+    /* position: absolute; */
+    width: 50%;
+    padding-bottom: 10%;
+    /* top:calc((4px + 14vmin)/3); */
 }
 
 .minorskillImg{
@@ -105,11 +104,10 @@
 }
 
 .skillName{
-    position:absolute;
+    /* position:absolute; */
     font-family: "Inconsolata-Bold";
     font-size: 2vmin;
-    right:0px;
-    top:0px;
+    color: #eff4ff;
 }
 
 .skillgraph{

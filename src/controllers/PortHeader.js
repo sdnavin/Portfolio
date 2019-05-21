@@ -17,7 +17,7 @@ export default class PortHeader extends Component {
   render() {
     return (
       <div className='portheader background-tint'>
-      <ReactTypingEffect className="titledescribe" staticText={this.title} text={this.titleDescription} speed = "100" cursor="_" eraseDelay='1000000000'/>
+      <ReactTypingEffect className="titledescribe" staticText={this.title} text={this.titleDescription} speed = "50" cursor="_" eraseDelay='1000000000'/>
       <div className='portLinker'>
       <Linker/>
       </div>

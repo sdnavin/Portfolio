@@ -4,11 +4,14 @@ import { usePdf } from 'react-pdf-js';
 import '../styles/PDF.css';
 
 const PDFViewer = () => {
+  let sizeOffset=0.26;
   const [page, setPage] = useState(1);
-  const [scale, setScale] = useState(0.8);
+  console.log(window.innerWidth);
+  const [scale, setScale] = useState((window.innerWidth>1000)?1:((window.innerWidth/1000)+sizeOffset));
   const [pages, setPages] = useState(null);
 
- 
+  var lastWindowSize=0;
+
 
   const renderPagination = (page, pages) => {
     if (!pages) {
@@ -33,6 +36,16 @@ const PDFViewer = () => {
   }
 
 
+ 
+  const HandleWindowResize=()=>{
+    if((lastWindowSize===0&&window.innerWidth>1000)||(lastWindowSize===1000&&window.innerWidth<1000)){
+        lastWindowSize=(window.innerWidth>1000)?1000:0;
+        setScale((window.innerWidth>1000)?1:((window.innerWidth/1000)+sizeOffset));
+    }
+  }
+ 
+  window.addEventListener('resize', HandleWindowResize);
+
   const canvasEl = useRef(null);
  
   const [loading, numPages] = usePdf({
@@ -55,5 +68,8 @@ const PDFViewer = () => {
     </div>
   );
 }
+
+
  
 export default PDFViewer;
+

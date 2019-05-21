@@ -4,8 +4,8 @@
     font-size: calc(3px + 2.5vmin);
     display: inline-flex;
     flex-flow: row wrap;
-    margin-inline-start: 4%;
-    margin-inline-end: 4%;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
 
     color: #f1f1f1;
     text-decoration: none;
