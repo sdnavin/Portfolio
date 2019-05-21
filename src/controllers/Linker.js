@@ -9,7 +9,7 @@ export default function Linker() {
 
     return (
         <div className="links">
-        <NavLink className='linkstyle' exact={true} to="/" >Profile</NavLink> 
+        <NavLink className='linkstyle' exact={true} to={process.env.PUBLIC_URL+"/"} >Profile</NavLink> 
         <NavLink className='linkstyle' to="/achievements" >Achievements</NavLink>
         <NavLink className='linkstyle' to="/gallery" >Gallery</NavLink>
         <NavLink className='linkstyle' to="/resume" >Resume</NavLink>
