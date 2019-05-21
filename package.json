@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sdnavin.github.io/Portfolio",
+  "homepage": "https://sdnavin.github.io/Portfolio/build",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gsap": "^2.1.3",
