@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be5af463ec49099cd0ac26e82a54aa21",
+    "revision": "076f1c2e5decd01e1d193ac47f2cfc26",
     "url": "https://sdnavin.github.io/Portfolio/build/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sdnavin.github.io/Portfolio/build/static/css/2.f41ad63a.chunk.css"
   },
   {
-    "revision": "010146cecc4d511edcb5",
+    "revision": "e299377a7cfd41780629",
     "url": "https://sdnavin.github.io/Portfolio/build/static/css/main.aacd501b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://sdnavin.github.io/Portfolio/build/static/js/2.d277d8e0.chunk.js"
   },
   {
-    "revision": "010146cecc4d511edcb5",
-    "url": "https://sdnavin.github.io/Portfolio/build/static/js/main.1807077a.chunk.js"
+    "revision": "e299377a7cfd41780629",
+    "url": "https://sdnavin.github.io/Portfolio/build/static/js/main.4a0e0d5d.chunk.js"
   },
   {
     "revision": "cf5fb1c82bc75a45343e",
