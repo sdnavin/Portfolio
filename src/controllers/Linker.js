@@ -10,10 +10,10 @@ export default function Linker() {
     return (
         <div className="links">
         <NavLink className='linkstyle' exact={true} to={process.env.PUBLIC_URL+"/"} >Profile</NavLink> 
-        <NavLink className='linkstyle' to="/achievements" >Achievements</NavLink>
-        <NavLink className='linkstyle' to="/gallery" >Gallery</NavLink>
-        <NavLink className='linkstyle' to="/resume" >Resume</NavLink>
-        <NavLink className='linkstyle' to="/contact" >Contact</NavLink>
+        <NavLink className='linkstyle' to={process.env.PUBLIC_URL+"/achievements"} >Achievements</NavLink>
+        <NavLink className='linkstyle' to={process.env.PUBLIC_URL+"/gallery"} >Gallery</NavLink>
+        <NavLink className='linkstyle' to={process.env.PUBLIC_URL+"/resume"} >Resume</NavLink>
+        <NavLink className='linkstyle' to={process.env.PUBLIC_URL+"/contact"} >Contact</NavLink>
         </div>
         )
     }
