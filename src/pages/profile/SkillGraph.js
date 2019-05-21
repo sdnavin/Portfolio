@@ -25,7 +25,7 @@ export default class SkillGraph extends Component {
         return (
             <div className="skillset">
             {this.props.skills.map((skill)=>{
-                return <div><ProgressProvider valueStart={0} valueEnd={skill.value}>
+                return <div  key={skill.id} ><ProgressProvider valueStart={0} valueEnd={skill.value}>
                 {(value) =><CircularProgressbarWithChildren className = {"skill"} key={skill.id} value={value}
                 background
                 backgroundPadding={6}

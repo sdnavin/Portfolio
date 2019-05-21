@@ -17,6 +17,7 @@ export default class profile extends Component {
   }
   
   componentDidMount(){
+    console.log('public url: ', process.env.PUBLIC_URL)
     this.setState({profile:profiledata});
     this.canRender=true;
   }
