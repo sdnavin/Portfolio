@@ -23,7 +23,7 @@ class Popup extends React.Component {
       <br/>
       {
         (item.youtubeUrl.length>0)?
-        <YouTube ideoId={item.youtubeUrl} opts={opts}/>:""
+        <YouTube videoId={item.youtubeUrl} opts={opts}/>:""
       }
       <p>Deployed Platforms: {item.platforms}</p>  
       <p className="close" onClick={this.props.closePopup}>Close</p>  

@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
-import '../../styles/gallery.css'
-import Popup from './popup'
-import DyanmicLayout from '../../controllers/DyanmicLayout'
+import '../../styles/gallery.css';
+import Popup from './popup';
+import DyanmicLayout from '../../controllers/DyanmicLayout';
 
 export default class GalleryView extends Component {
     
@@ -16,7 +16,7 @@ export default class GalleryView extends Component {
             showPopup: false
         };  
     }  
-
+    
     opts = {
         height : 228*((window.innerWidth>1000)?1:0.6),//152
         width : 384*((window.innerWidth>1000)?1:0.6),//256
@@ -26,7 +26,7 @@ export default class GalleryView extends Component {
     };
     
     lastWindowSize=0;
-
+    
     componentDidMount() {
         window.addEventListener('resize', this.HandleWindowResize);
     }
@@ -34,7 +34,7 @@ export default class GalleryView extends Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.HandleWindowResize);
     }
-
+    
     HandleWindowResize=()=>{
         if((this.lastWindowSize==0&&window.innerWidth>1000)||(this.lastWindowSize==1000&&window.innerWidth<1000)){
             this.lastWindowSize=(window.innerWidth>1000)?1000:0;
@@ -83,18 +83,17 @@ export default class GalleryView extends Component {
             noFilter=true;
         }
         const filterItems=[];
-        
         {galleries.map((galleryItem)=>{
-            if(noFilter||galleryItem.type===this.currentFilterType){
-                //show filtered content
-                filterItems.push(<div className="filteritem" key={galleryItem.id}>{this.getGalleryItem(galleryItem)}</div>)
-            }
+                if(noFilter||galleryItem.type===this.currentFilterType){
+                    //show filtered content
+                    filterItems.push(<div className="filteritem" key={galleryItem.id}>{this.getGalleryItem(galleryItem)}</div>)
+                }
         })}
         return filterItems;
     }
     
     getGalleryItem(item){
-
+        
         return(
             <div>
             <div className="filterboxitem">
@@ -103,7 +102,7 @@ export default class GalleryView extends Component {
             <p>{item.about.slice(0,100)}{item.about.length>100?"...":""}</p>
             {
                 (item.youtubeUrl.length>0)?
-                <YouTube ideoId={item.youtubeUrl} opts={this.opts}/>:""
+                <YouTube videoId={item.youtubeUrl} opts={this.opts} />:""
             }
             <p className="hypertext" onClick={this.togglePopup.bind(this,item)}>More details</p>
             </div>
@@ -111,6 +110,8 @@ export default class GalleryView extends Component {
             </div>
             )
         }
+        
+        
         togglePopup(popitem) {  
             
             this.setState({  

@@ -13,7 +13,7 @@ export default class Skills extends Component {
   changeExp = (vNo) => {
     this.experienceNo=this.experienceNo+vNo;
     this.experienceNo=this.numbClamp(this.experienceNo,0,(this.props.experiences.length-1));
-    console.log(this.experienceNo);
+    // console.log(this.experienceNo);
     this.forceUpdate();
   };
   

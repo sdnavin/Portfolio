@@ -12,7 +12,7 @@ export default class Achievements extends Component {
 
     getAchievements(){
         const allLines=[];
-        console.log(this.props.allAchievements);
+        // console.log(this.props.allAchievements);
         {this.props.allAchievements.map((Achievement)=>{
             allLines.push (<div className="Achieve" key={Achievement.id} >
                 <h1 onClick={this.openWebPage.bind(this,Achievement.websiteUrl)}><span>{Achievement.name} </span> </h1>
