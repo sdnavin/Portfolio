@@ -20,10 +20,10 @@ function App() {
         <PortHeader/>
         <div className="pages">
           <Route exact path="/" component={profile}/>
-          <Route exact path="/gallery" component={gallery}/>
-          <Route exact path="/achievements" component={achieve}/>
-          <Route exact path="/resume" component={resume}/>
-          <Route exact path="/contact" component={contact} />
+          <Route  path="/gallery" component={gallery}/>
+          <Route  path="/achievements" component={achieve}/>
+          <Route  path="/resume" component={resume}/>
+          <Route  path="/contact" component={contact} />
         </div>
       </div>
     </Router>
