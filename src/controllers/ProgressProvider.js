@@ -18,7 +18,7 @@ export default class ProgressProvider extends Component {
             this.setState({
                 value:this.props.valueEnd
             });
-        }, 0); 
+        }, 600); 
     }
     componentWillUnmount(){
         window.clearTimeout(this.timeout);

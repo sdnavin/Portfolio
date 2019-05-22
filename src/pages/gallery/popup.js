@@ -18,22 +18,29 @@ class Popup extends React.Component {
       <div className='popup'>  
       <div className='popupinner'>  
       <div className='popupText'>
-      <h1><span>{item.name}</span></h1>
+      <h1 onClick={this.openWebPage.bind(this,item.websiteUrl)}><span>{item.name}</span></h1>
       <p>{item.about}</p>
       <br/>
       {
         (item.youtubeUrl.length>0)?
         <YouTube videoId={item.youtubeUrl} opts={opts}/>:""
       }
-      <p>Deployed Platforms: {item.platforms}</p>  
+      <p>Deployed Platform{item.platforms.includes(',')?"s":""}: {item.platforms}</p>  
       <p className="close" onClick={this.props.closePopup}>Close</p>  
       </div>
       </div>  
       </div>  
       );  
     }  
+
+    openWebPage=(pageURL)=>{
+      if(pageURL.length>0)
+        window.open(pageURL, "_blank") //to open new page
+    }
   }  
-  
+
+
+
   export default Popup;
   
   // PropTypes

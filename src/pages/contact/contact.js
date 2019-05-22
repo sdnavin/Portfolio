@@ -25,7 +25,8 @@ export default class contact extends Component {
   };
   
   openWebPage=(pageURL)=>{
-    window.open(pageURL, "_blank") //to open new page
+    if(pageURL.length>0)
+      window.open(pageURL, "_blank") //to open new page
   }
   animElements=document.getElementsByClassName("icons");
 

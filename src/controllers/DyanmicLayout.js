@@ -6,31 +6,42 @@ export default class DyanmicLayout extends Component {
   arrayOfDiv=[];
   totalRows=0;
   canRender=false;
+  widthCheck=0;
   totalIn=0;
-
+  
+  state={
+    allLines:[]
+  }
+  
   componentDidMount(){
+    this.widthCheck=window.innerWidth;
     this.totalIn=this.props.children.length;
     this.start();
-    this.forceUpdate();
+    this.addwithDelay();
   }
   componentDidUpdate(){
-    if(this.totalIn!==this.props.children.length)
+    
+    if(this.widthCheck!==window.innerWidth||this.totalIn!==this.props.children.length)
     {
       this.start();
+      this.widthCheck=window.innerWidth;
       this.totalIn=this.props.children.length;
-      this.forceUpdate();
+      this.addwithDelay();
     }
   }
-
- 
+  
+  
   start(){
     this.arrayOfDiv=this.props.children;
+    this.state.allLines=[];
     this.canRender=true;
+    this.lineNo=0;
+    this.DLines=[];
   }
   
   getcolumns(){
     const allLines=[];
-
+    
     for(let i=0;i<this.props.noofcolumns;i++){
       allLines.push(<div className="dyanmicColunms" key={i} >{this.getEachColumn(i)}</div>);
     }
@@ -42,7 +53,7 @@ export default class DyanmicLayout extends Component {
     var totalCount=this.props.noofcolumns-1;
     let j=0;
     const allLines=[];
-
+    
     for(j=0;j<this.arrayOfDiv.length;j++){
       if(this.props.noofcolumns===1||j===icolumn||loop){
         loop=false;
@@ -59,11 +70,36 @@ export default class DyanmicLayout extends Component {
     return allLines;
   }
   
+  
+ 
+  
+  lineNo=0;
+  DLines=[];
+  addwithDelay(){
+    if(this.lineNo===0){
+      this.DLines=this.getcolumns();
+    }
+    setTimeout(() => {
+      if(this.lineNo<this.DLines.length){
+        var delayLines=[];
+        for(let i=0;i<=this.lineNo;i++){
+          delayLines.push(this.DLines[i]);
+        }
+        const {allLines} = this.state
+        this.setState({
+          allLines:(delayLines)
+        });
+        this.lineNo=this.lineNo+1;
+        this.addwithDelay();
+      }
+    }, this.lineNo===0?0:1000);
+  }
+  
   render() {
     if(this.canRender){
       return (
         <div className="dyanmicBox">
-        {this.getcolumns()}
+        {this.state.allLines.map(line => (line))}
         </div>
         )
       }else{

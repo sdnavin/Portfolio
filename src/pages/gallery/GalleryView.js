@@ -6,7 +6,9 @@ import Popup from './popup';
 import DyanmicLayout from '../../controllers/DyanmicLayout';
 
 export default class GalleryView extends Component {
-    
+
+    miniScreenWidth=766;
+
     currentFilterType="All";
     galleryTypes=["All",];
     constructor(props){  
@@ -36,8 +38,8 @@ export default class GalleryView extends Component {
     }
     
     HandleWindowResize=()=>{
-        if((this.lastWindowSize==0&&window.innerWidth>1000)||(this.lastWindowSize==1000&&window.innerWidth<1000)){
-            this.lastWindowSize=(window.innerWidth>1000)?1000:0;
+        if((this.lastWindowSize===0&&window.innerWidth>this.miniScreenWidth)||(this.lastWindowSize===1000&&window.innerWidth<this.miniScreenWidth)){
+            this.lastWindowSize=(window.innerWidth>this.miniScreenWidth)?1000:0;
             this.opts.height = 228*((window.innerWidth>1000)?1:0.6);//152
             this.opts.width = 384*((window.innerWidth>1000)?1:0.6);//256
             this.forceUpdate();
@@ -67,6 +69,11 @@ export default class GalleryView extends Component {
             }
         }
         return items;
+    }
+
+    openWebPage=(pageURL)=>{
+        if(pageURL.length>0)
+          window.open(pageURL, "_blank") //to open new page
     }
     
     filterit=(filterType)=>{
@@ -98,7 +105,7 @@ export default class GalleryView extends Component {
             <div>
             <div className="filterboxitem">
             <div className="filterText">
-            <h1><span>{item.name}</span></h1>
+            <h1 onClick={this.openWebPage.bind(this,item.websiteUrl)}><span>{item.name}</span></h1>
             <p>{item.about.slice(0,100)}{item.about.length>100?"...":""}</p>
             {
                 (item.youtubeUrl.length>0)?
@@ -128,7 +135,7 @@ export default class GalleryView extends Component {
                 </div>
                 <hr border="0" />
                 
-                <DyanmicLayout noofcolumns={(window.innerWidth>1000)?2:1}>
+                <DyanmicLayout noofcolumns={(window.innerWidth>800)?2:1}>
                 {this.filterView()}
                 {/* <div></div> */}
                 </DyanmicLayout>  
