@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import PortHeader from './controllers/PortHeader';
 import profile from './pages/profile/profile';
@@ -19,12 +19,16 @@ function App() {
         </Helmet>
         <PortHeader/>
         <div className="pages">
-          {/* {console.log(process.env.PUBLIC_URL+"/")} */}
+          {/* <Router> */}
+          <Switch> 
           <Route exact path={process.env.PUBLIC_URL+"/"} component={profile}/>
           <Route  exact path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
           <Route  exact path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
           <Route  exact path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
           <Route  exact path={process.env.PUBLIC_URL+"/contact"} component={contact} />
+          {/* <Route path='*' component={NoMatch}/> */}
+          </Switch>
+          {/* </Router> */}
         </div>
       </div>
     </Router>
