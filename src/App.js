@@ -21,10 +21,10 @@ function App() {
         <div className="pages">
           {/* {console.log(process.env.PUBLIC_URL+"/")} */}
           <Route exact path={process.env.PUBLIC_URL+"/"} component={profile}/>
-          <Route  path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
-          <Route  path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
-          <Route  path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
-          <Route  path={process.env.PUBLIC_URL+"/contact"} component={contact} />
+          <Route  exact path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
+          <Route  exact path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
+          <Route  exact path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
+          <Route  exact path={process.env.PUBLIC_URL+"/contact"} component={contact} />
         </div>
       </div>
     </Router>
