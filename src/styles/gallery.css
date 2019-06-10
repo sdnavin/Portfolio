@@ -1,7 +1,7 @@
 @import './font.css';
 
 .filterpage{
-    width: 90%;
+    width: 95%;
     display: inline-block;
 }
 .filters{
@@ -45,7 +45,7 @@
 }
 
 .filterboxitem{
-    border-radius: 20px;  
+    border-radius: 10px;  
     background-color:#2a2a2ade; 
     
 }
@@ -54,8 +54,8 @@
 }
 
 .filteritem{
-    width: calc(100px + 50vmin);
-    padding: 20px;
+    /* width: calc(100px + 50vmin); */
+    padding: 10px;
 }
 
 .hypertext{
@@ -68,6 +68,10 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.hypertext:hover{
+    opacity: 0.8;
+}
 .filterText{
     padding-top: 10px;
     padding-left: 20px;
@@ -76,6 +80,11 @@
     font-family: 'Inconsolata-Regular';
     color: #f1f1f1;
 }
+
+.filterText:hover{
+    opacity: 0.8;
+}
+
 .filterText span{
     font-family: 'Inconsolata-Bold';
     font-weight: bold;

@@ -30,6 +30,9 @@
 .skillbut.disable{
     color: #f1f1f159;
 }
+.skillbut:hover{
+    opacity: 0.8;
+}
 
 .skillbut.span{
     left: calc((1px + 2vmin)*18);

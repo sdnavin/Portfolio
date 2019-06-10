@@ -11,12 +11,19 @@
     "react-circular-progressbar": "^2.0.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-nprogress": "^0.1.6",
     "react-pdf": "^4.0.5",
     "react-pdf-js": "^5.0.5",
+    "react-redux": "^7.0.3",
+    "react-redux-loading-bar": "^4.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-typing-effect": "^2.0.2",
-    "react-youtube": "^7.9.0"
+    "react-youtube": "^7.9.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^6.1.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -36,7 +36,9 @@
     width: calc(10px + 5vmin);
     height: calc(10px + 5vmin);
     cursor: pointer;
-    
+}
+.icons:hover{
+    opacity: 0.5;
 }
 
 /* .icons.fb{

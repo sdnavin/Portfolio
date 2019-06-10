@@ -1,7 +1,7 @@
 import '../../styles/pages.css';
 import Skills from './Skills';
-import React, { Component } from 'react'
-import profiledata from '../../data/profileData.json'
+import React, { Component } from 'react';
+import profiledata from '../../data/profileData.json';
 import Education from './Education';
 
 export default class profile extends Component {
@@ -31,7 +31,8 @@ export default class profile extends Component {
         </div>
         )
       }else{
-        return (<div></div>)
+        return (<div>
+          </div>)
         }
       }
     }

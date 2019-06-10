@@ -8,27 +8,33 @@ import gallery from './pages/gallery/gallery';
 import achieve from './pages/achievements/achieve';
 import resume from './pages/resume/resume';
 import {Helmet} from 'react-helmet';
+import {HashRouter} from 'react-router-dom';
+import { Provider } from 'react-redux';
+
 
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Helmet >
-                <style>{'body { background-color: #000000de; }'}</style>
-        </Helmet>
-        <PortHeader/>
-        <div className="pages">
-          {/* {console.log(process.env.PUBLIC_URL+"/")} */}
-          <Route exact path={process.env.PUBLIC_URL+"/"} component={profile}/>
-          <Route  exact path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
-          <Route  exact path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
-          <Route  exact path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
-          <Route  exact path={process.env.PUBLIC_URL+"/contact"} component={contact} />
-        </div>
-      </div>
-    </Router>
+    <div className="App">
+    <Helmet >
+    <style>{'body { background-color: #000000de; }'}</style>
+    </Helmet>
+    <PortHeader/>
     
+    <div className="pages">
+    {/* <HashRouter> */}
+    <Route exact path={process.env.PUBLIC_URL+"/"} component={profile}/>
+    <Route  exact path={process.env.PUBLIC_URL+"/gallery"} component={gallery}/>
+    <Route  exact path={process.env.PUBLIC_URL+"/achievements"} component={achieve}/>
+    <Route  exact path={process.env.PUBLIC_URL+"/resume"} component={resume}/>
+    <Route  exact path={process.env.PUBLIC_URL+"/contact"} component={contact} />
+    {/* </HashRouter> */}
+
+    </div>
+    
+    </div>
+    </Router>
     );
   }
   

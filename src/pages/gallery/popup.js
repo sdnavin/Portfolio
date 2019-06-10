@@ -4,18 +4,26 @@ import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 
 class Popup extends React.Component {  
+
+  miniScreenWidth=920;
+  
   render() {  
     const item= this.props.popitem;
     const opts = {
 
-      height: 360*((window.innerWidth>=1000)?1:0.4),//152
-      width: 640*((window.innerWidth>=1000)?1:0.4),//256
+      // height: 360*((window.innerWidth>=1000)?1:0.4),//152
+      // width: 640*((window.innerWidth>=1000)?1:0.4),//256
+
+      
+      height : Math.min(1.4*240*((window.innerWidth/this.miniScreenWidth)),240),//152
+      width : Math.min(1.4*420*((window.innerWidth/this.miniScreenWidth)),420),//256
+
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0
       }
     };
     return (  
-      <div className='popup'>  
+      <div className='popup' onClick={this.props.closePopup}>  
       <div className='popupinner'>  
       <div className='popupText'>
       <h1 onClick={this.openWebPage.bind(this,item.websiteUrl)}><span>{item.name}</span></h1>

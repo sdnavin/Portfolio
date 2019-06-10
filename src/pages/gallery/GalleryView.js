@@ -7,7 +7,7 @@ import DyanmicLayout from '../../controllers/DyanmicLayout';
 
 export default class GalleryView extends Component {
 
-    miniScreenWidth=766;
+    miniScreenWidth=920;
 
     currentFilterType="All";
     galleryTypes=["All",];
@@ -20,8 +20,12 @@ export default class GalleryView extends Component {
     }  
     
     opts = {
-        height : 228*((window.innerWidth>1000)?1:0.6),//152
-        width : 384*((window.innerWidth>1000)?1:0.6),//256
+        // height : 228*((window.innerWidth>1000)?1:0.6),//152
+        // width : 384*((window.innerWidth>1000)?1:0.6),//256
+
+        height : Math.min(1.4*240*((window.innerWidth/this.miniScreenWidth)),240),//152
+        width : Math.min(1.4*420*((window.innerWidth/this.miniScreenWidth)),420),//256
+
         playerVars: { // https://developers.google.com/youtube/player_parameters
             autoplay: 0
         }
@@ -38,13 +42,25 @@ export default class GalleryView extends Component {
     }
     
     HandleWindowResize=()=>{
-        if((this.lastWindowSize===0&&window.innerWidth>this.miniScreenWidth)||(this.lastWindowSize===1000&&window.innerWidth<this.miniScreenWidth)){
+        console.log(window.innerWidth);
+        // if((this.lastWindowSize===0&&window.innerWidth>this.miniScreenWidth)||(this.lastWindowSize===1000&&window.innerWidth<this.miniScreenWidth))
+        {
             this.lastWindowSize=(window.innerWidth>this.miniScreenWidth)?1000:0;
-            this.opts.height = 228*((window.innerWidth>1000)?1:0.6);//152
-            this.opts.width = 384*((window.innerWidth>1000)?1:0.6);//256
+            // this.opts.height = 228*((window.innerWidth>1000)?1:0.6);//152
+            // this.opts.width = 384*((window.innerWidth>1000)?1:0.6);//256
+
+            this.opts.height = this.numbClamp( 1.35*240*((window.innerWidth/this.miniScreenWidth)),0,240);//152
+            this.opts.width =this.numbClamp(  1.35*420*((window.innerWidth/this.miniScreenWidth)),0,420);//256
+
             this.forceUpdate();
         }
     }
+
+    numbClamp =(numbValue,  min,  max ) => {
+        if( numbValue < min ) return min;
+        if( numbValue > max ) return max;
+        return numbValue;
+    };
     
     
     getGalleryTypes(){
@@ -93,7 +109,7 @@ export default class GalleryView extends Component {
         {galleries.map((galleryItem)=>{
                 if(noFilter||galleryItem.type===this.currentFilterType){
                     //show filtered content
-                    filterItems.push(<div className="filteritem" key={galleryItem.id}>{this.getGalleryItem(galleryItem)}</div>)
+                    filterItems.push(<div className="filteritem" style={{ width: ((window.innerWidth>this.miniScreenWidth)?2:1)*"calc(100px + 50vmin)" }} key={galleryItem.id}>{this.getGalleryItem(galleryItem)}</div>)
                 }
         })}
         return filterItems;
@@ -135,7 +151,7 @@ export default class GalleryView extends Component {
                 </div>
                 <hr border="0" />
                 
-                <DyanmicLayout noofcolumns={(window.innerWidth>800)?2:1}>
+                <DyanmicLayout noofcolumns={(window.innerWidth>this.miniScreenWidth)?2:1}>
                 {this.filterView()}
                 {/* <div></div> */}
                 </DyanmicLayout>  
