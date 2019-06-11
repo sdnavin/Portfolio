@@ -23,8 +23,8 @@ export default class GalleryView extends Component {
         // height : 228*((window.innerWidth>1000)?1:0.6),//152
         // width : 384*((window.innerWidth>1000)?1:0.6),//256
 
-        height : Math.min(1.4*240*((window.innerWidth/this.miniScreenWidth)),240),//152
-        width : Math.min(1.4*420*((window.innerWidth/this.miniScreenWidth)),420),//256
+        height : Math.min(1.45*240*((window.innerWidth/this.miniScreenWidth)),240),//152
+        width : Math.min(1.45*420*((window.innerWidth/this.miniScreenWidth)),420),//256
 
         playerVars: { // https://developers.google.com/youtube/player_parameters
             autoplay: 0
@@ -49,8 +49,8 @@ export default class GalleryView extends Component {
             // this.opts.height = 228*((window.innerWidth>1000)?1:0.6);//152
             // this.opts.width = 384*((window.innerWidth>1000)?1:0.6);//256
 
-            this.opts.height = this.numbClamp( 1.35*240*((window.innerWidth/this.miniScreenWidth)),0,240);//152
-            this.opts.width =this.numbClamp(  1.35*420*((window.innerWidth/this.miniScreenWidth)),0,420);//256
+            this.opts.height = this.numbClamp( 1.45*240*((window.innerWidth/this.miniScreenWidth)),0,240);//152
+            this.opts.width =this.numbClamp(  1.45*420*((window.innerWidth/this.miniScreenWidth)),0,420);//256
 
             this.forceUpdate();
         }

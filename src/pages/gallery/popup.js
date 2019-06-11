@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Popup extends React.Component {  
 
   miniScreenWidth=920;
-  
+
   render() {  
     const item= this.props.popitem;
     const opts = {
@@ -15,8 +15,8 @@ class Popup extends React.Component {
       // width: 640*((window.innerWidth>=1000)?1:0.4),//256
 
       
-      height : Math.min(1.4*240*((window.innerWidth/this.miniScreenWidth)),240),//152
-      width : Math.min(1.4*420*((window.innerWidth/this.miniScreenWidth)),420),//256
+      height : Math.min(1.15*240*((window.innerWidth/this.miniScreenWidth)),240),//152
+      width : Math.min(1.15*420*((window.innerWidth/this.miniScreenWidth)),420),//256
 
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0
@@ -27,7 +27,7 @@ class Popup extends React.Component {
       <div className='popupinner'>  
       <div className='popupText'>
       <h1 onClick={this.openWebPage.bind(this,item.websiteUrl)}><span>{item.name}</span></h1>
-      <p>{item.about}</p>
+      <p className='popupAbout'>{item.about}</p>
       <br/>
       {
         (item.youtubeUrl.length>0)?
