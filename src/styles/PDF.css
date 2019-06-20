@@ -17,6 +17,11 @@
     left: 2%;
 
 }
+
+.previous:hover{
+    color: #13a0ff;
+}
+
 .previous.disabled{
     color:  #007acc46;
     font-weight: 200;
@@ -30,6 +35,11 @@
     cursor: pointer;
     right: 2%;
 }
+
+.next:hover{
+color:  #13a0ff;
+}
+
 .next.disabled{
     position: absolute;
     color:  #007acc46;

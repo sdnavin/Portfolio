@@ -32,13 +32,16 @@
 
 .icons{
     /* position: absolute; */
+    opacity: .5;
+    /* filter: grayscale(0%); */
     border-radius: 50%;
     width: calc(10px + 5vmin);
     height: calc(10px + 5vmin);
     cursor: pointer;
 }
 .icons:hover{
-    opacity: 0.5;
+    opacity: 1;
+    /* filter: grayscale(100%); */
 }
 
 /* .icons.fb{

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
+import TweenMax from 'gsap';
+
 export default class ProgressProvider extends Component {
 
     constructor(props){
@@ -13,15 +15,27 @@ export default class ProgressProvider extends Component {
 
     timeout=0;
 
+    componentWillReceiveProps(){
+        this.updateAnim(1000);
+    }
+
+
+
     componentDidMount(){
+        this.updateAnim(500);
+    }
+    componentWillUnmount(){
+        window.clearTimeout(this.timeout);
+    }
+
+    updateAnim(timeval){
+        this.setState({value:this.props.valueStart});
+
         this.timeout= setTimeout(() => {
             this.setState({
                 value:this.props.valueEnd
             });
-        }, 600); 
-    }
-    componentWillUnmount(){
-        window.clearTimeout(this.timeout);
+        }, timeval); 
     }
 
   render() {

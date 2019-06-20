@@ -3,9 +3,14 @@ import { usePdf } from 'react-pdf-js';
 
 import '../styles/PDF.css';
 
+
+
 const PDFViewer = () => {
+
+
   let sizeOffset=0.26;
   const [page, setPage] = useState(1);
+
   // console.log(window.innerWidth);
   const [scale, setScale] = useState((window.innerWidth>1000)?1:((window.innerWidth/1000)+sizeOffset));
   const [pages, setPages] = useState(null);

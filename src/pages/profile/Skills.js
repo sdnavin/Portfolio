@@ -9,7 +9,24 @@ export default class Skills extends Component {
   experienceNo=0;
   previousState="< ";
   nextState=" >";
+  skip=false;
+
+  componentDidMount(){
+    setInterval(()=>{this.moveToNext()},15000);
+  }
   
+
+  moveToNext(){
+    if(this.skip){
+      this.skip=false;
+      return;
+    }
+    if(this.experienceNo===this.props.experiences.length-1){
+      this.experienceNo=0;
+    }
+    this.checkButtonActivate(1);
+  }
+
   changeExp = (vNo) => {
     this.experienceNo=this.experienceNo+vNo;
     this.experienceNo=this.numbClamp(this.experienceNo,0,(this.props.experiences.length-1));
@@ -42,8 +59,10 @@ export default class Skills extends Component {
       <div className="skillholder">
       <h2 className="title">Skills & <br/> Experience</h2>
 
-      <p className ={"skillbut"+this.checkButtonCSS(-1)} onClick={()=>this.checkButtonActivate(-1)}>{this.previousState}</p>
-      <p className ={"skillbut span"+this.checkButtonCSS(1)} onClick={()=>this.checkButtonActivate(1)}>{this.nextState}</p>
+      <p className ={"skillbut"+this.checkButtonCSS(-1)} onClick={()=>{this.checkButtonActivate(-1);
+      this.skip=true;}}>{this.previousState}</p>
+      <p className ={"skillbut span"+this.checkButtonCSS(1)} onClick={()=>{this.checkButtonActivate(1);
+      this.skip=true;}}>{this.nextState}</p>
 
       <div className="skillabout">
       <p className="abouttitle">{this.props.experiences[this.experienceNo].name}<br/>
